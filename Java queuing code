@@ -1,0 +1,45 @@
+//Rough code for sending files from the source node which have poisson arriving tasks and random task sizes of {30,40,50,60,70 KBs}
+
+
+
+
+public static int getPoisson(double lambda) {
+  double L = Math.exp(-lambda);
+  double p = 1.0;
+  int k = 0;
+
+  do {
+    k++;
+    p *= Math.random();
+  } while (p > L);
+
+  return k - 1;
+}
+
+
+
+for(int x = 1; x <= getPoisson(2.0); x = x+1)
+{
+int tsksize=Random.nextInt(5);
+
+switch (tsksize) {
+case 0: 
+//file sending code for drop;
+break;
+case 1: 
+//file sending code for drop 1;
+break;
+case 2
+//file sending code for drop 2;
+
+case 3
+//file sending code for drop 3;
+
+case 4
+//file sending code for drop 6;
+
+default:
+//file sending code for drop 7;
+}
+
+}
